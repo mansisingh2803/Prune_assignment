@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Created a form for login -->
+        <form action="" method="post" id="form">
+            <div class="message"> <span>X</span></div>
+            <h1 class="title">Login</h1>
+            <div class="phdiv">
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone number...">
+                <span class="phone error"> </span>
+            </div>
+            <div class="otpdiv nodis">
+                <input type="number" name="otp" id="otp" placeholder="Enter your OTP...">
+                <span class="phone error"> </span>
+            </div>
+            <div class="btndiv">
+                <button type="submit">Sent OTP</button>
+                <div>Don't have account? <a href="index.html">Signup</a></div>
+            </div>
+        </form>
+        <div class="panels-container">
+
+            <div class="content">
+                <img src="Sim_delivery.png" alt="" class="image">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Javascript for verification and getting otp -->
+    <script src="login.js"></script>
+</body>
+
+</html>

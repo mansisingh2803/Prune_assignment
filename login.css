@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+:root {
+    --background: #d1dae3;
+    --grey: grey;
+    --error: red;
+    --success: green;
+    --white: white;
+    --black: black;
+}
+
+input,
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+
+a {
+    color: blue;
+
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--background);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.container {
+    position: relative;
+    width: 70vw;
+    display: flex;
+    height: 80vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+    padding: 20px 10px;
+    position: relative;
+}
+
+form div {
+    width: 60%;
+}
+
+.title {
+    font-size: 35px;
+    color: #df4adf;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+input {
+    border-bottom: 2px solid var(--grey);
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+input:focus {
+    border-bottom: 2px solid var(--black);
+}
+
+.error {
+    font-size: .7rem;
+    color: var(--error);
+    text-align: right;
+    width: 100%;
+    float: right;
+    font-style: italic;
+}
+
+.redborder {
+    border-bottom: 2px solid var(--error);
+}
+
+.greenborder {
+    border-bottom: 2px solid var(--success);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: #df4adf;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c03cc0;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+.message {
+    width: 60%;
+    padding: 10px 20px;
+    visibility: hidden;
+}
+
+.message span {
+    float: right;
+    color: var(--white);
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ok_message {
+    background-color: var(--success);
+    color: var(--white);
+    letter-spacing: 1px;
+    visibility: visible;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, .5),
+        15px 15px 20px rgba(0, 0, 0, .3),
+        inset -5px -5px 15px rgba(255, 255, 255, .5),
+        inset 5px 5px 20px rgba(0, 0, 0, .3);
+}
+
+.error_message {
+    background-color: var(--error);
+    color: var(--white);
+    visibility: visible;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, .5),
+        15px 15px 20px rgba(0, 0, 0, .3),
+        inset -5px -5px 15px rgba(255, 255, 255, .5),
+        inset 5px 5px 20px rgba(0, 0, 0, .3);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.gender {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--grey);
+}
+
+.gender input {
+    width: auto;
+}
+
+.dobdiv {
+    color: var(--grey);
+}
+
+.dobdiv input {
+    color: var(--grey);
+}
+
+.btndiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btndiv div {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--grey);
+}
+
+
+.dis {
+    display: block;
+}
+
+.nodis {
+    display: none;
+}
+
+.panels-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #df4adf, #520852);
+
+}
+
+.content {
+    color: #fff;
+    width: 60%;
+    height: 60%;
+
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Responsive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .panels-container {
+        display: none;
+
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .panels-container {
+        display: none;
+
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .content {
+        width: 80%;
+        height: 30%;
+    }
+
+    .panels-container {
+        display: flex;
+    }
+
+    form {
+        width: 40%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .content {
+        width: 60%;
+        height: 60%;
+    }
+}

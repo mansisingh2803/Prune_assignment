@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Created the form -->
+        <form action="" method="post" id="form">
+            <!-- Message for error or sucess -->
+            <div class="message"> <span>X</span></div>
+            <h1 class="title">Signup</h1>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name...">
+                <span class="name error"> </span>
+
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter your email...">
+                <span class="email error"> </span>
+            </div>
+            <div>
+                <input type="number" name="phone" id="phone" placeholder="Enter your phone number...">
+                <span class="phone error"> </span>
+            </div>
+            <div class="gender">
+                <div>
+                    Gender
+                </div>
+                <div>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <span class="password error"> </span>
+            </div>
+            <div class="dobdiv">
+                <div>DOB</div>
+                <input type="date" name="dob" id="dob">
+                <span class="cpassword error"> </span>
+            </div>
+            <div class="btndiv">
+                <button type="submit">Submit</button>
+                <div>Already have account? <a href="login.html">Login</a></div>
+            </div>
+
+        </form>
+        <!-- Created one panel for showing icon -->
+        <div class="panels-container">
+
+            <div class="content">
+                <img src="Sim_delivery.png" alt="" class="image">
+            </div>
+
+        </div>
+    </div>
+    <!-- Javascript for handling the errors -->
+    <script src="script.js"></script>
+</body>
+
+</html>
